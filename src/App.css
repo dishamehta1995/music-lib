@@ -1,0 +1,142 @@
+/* CSS Reset begins */
+*{margin:0;padding:0;text-decoration:none;list-style:none;box-sizing:border-box;-webkit-tap-highlight-color: transparent;}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, em, img,
+small, strike, strong, sub, sup, tt,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: 400;
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box; 
+}
+button,a{cursor:pointer;color:inherit;}
+strong,em{font-weight:700;}
+a{color: #377DFF;}
+a:hover{text-decoration:none;cursor:pointer;}
+a:focus,input:focus{outline:none;list-style:none;}
+*:hover{transition: .2s ease;}
+html,body{font-family:-apple-system, BlinkMacSystemFont, Segoe UI, segoe ui, SegoeUI, Segoe, Helvetica, Arial, sans-serif;color:#858A8F;position:relative;-webkit-backface-visibility:hidden !important;backface-visibility:hidden !important;-webkit-overflow-scrolling:touch;-webkit-text-size-adjust:100%;font-weight:400;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+body{display: flex;flex-direction: column;}
+/* CSS Reset ends */
+.container{max-width: 1290px;padding: 0 15px; width: 100%;margin: auto;}
+.hide{display: none;}
+.title {
+  font-size: 1.8rem;
+  color: #111;
+  margin-bottom: 20px;
+}
+.d-flex{
+  display: flex;
+}
+.align-center{
+  align-items: center;
+}
+.form-control {
+  font-size: 18px;
+  padding: 6px 20px;
+  width: 100%;
+}
+.col{
+  margin-bottom: 20px;
+  position: relative;
+}
+.img-wrap{
+  max-width: 200px;
+  width: 100%;
+}
+.img-responsive{
+  width: 100%;
+}
+.col{padding: 0 15px;}
+.wrapper{font-size: 16px;}
+.list-title{font-weight: bold;margin-bottom: 10px;}
+.list-description { font-size: 16px; margin: 10px 0;}
+.list-info{font-style: italic;}
+.list-links{color: #111;display: block;margin-bottom: 10px;}
+.list-links .icon{margin-right: 10px;}
+.menu {
+  position: absolute;
+  z-index: 1;
+  background: #fff;
+  width: calc(100% - 30px);
+  padding: 10px;
+  border: 1px solid #111;
+}
+label{margin: 0 10px;}
+/* ------------------ */
+/* This css is for normalizing styles. You can skip this. */
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input[type='checkbox'] {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  opacity: 0;
+}
+
+label {
+  position: relative;
+  cursor: pointer;
+}
+
+label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #111;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+input[checked] + label:after,
+input[type='checkbox']:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #111;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.input-wrap{
+  position: relative;
+  margin-bottom: 12px;
+}
